@@ -1,5 +1,5 @@
 {
-  "name": "imears-api",
+  "name": "imears-server",
   "version": "1.0.0",
   "description": "A REST API for the iMears family",
   "main": "index.js",
