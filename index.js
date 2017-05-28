@@ -10,7 +10,7 @@ const imageUrls = [
   'http://i.imgur.com/8fYJCto.jpg',
 ];
 
-app.get('/container/:id', (req, res) => {
+app.get('/crate/:id', (req, res) => {
   res.send(`<img src="${imageUrls[req.params.id]}" style="width: 100%">`);
 });
 
