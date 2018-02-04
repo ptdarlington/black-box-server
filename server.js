@@ -28,6 +28,20 @@ app.use(function(req, res, next) {
 router.get('/', function(req, res) {
  res.json({ message: 'API Initialized!'});
 });
+
+router.get('/boxes', function(req, res) {
+ res.json([
+   {
+     name: 'foo',
+     createdAt: '11/12/2018'
+   },
+   {
+     name: 'bar',
+     createdAt: '11/15/2018'
+   },
+ ]);
+});
+
 //Use our router configuration when we call /api
 app.use('/api', router);
 //starts the server and listens for requests
